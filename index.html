@@ -2,54 +2,9 @@
 
 <head>
 <meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" type="text/css" href="GitHub2.css">
-
-<style> @media print{ {.hljs{overflow: visible; word-wrap: break-word;} }</style></head><body>
-<h4 id="toc_0">先看效果</h4>
-
-<p>这是系统默认的效果</p>
-
-<p><img src="http://www.zxjsn.com/wp-content/uploads/2015/03/%E5%8E%9F%E6%9D%A5-300x75.jpg" alt="这里写图片描述"/></p>
-
-<p>这是改变后的效果</p>
-
-<p><img src="http://www.zxjsn.com/wp-content/uploads/2015/03/%E7%8E%B0%E5%9C%A8-300x84.jpg" alt="这里写图片描述"/></p>
-
-<hr/>
-
-<h4 id="toc_1">具体的实现方式：</h4>
-
-<ul>
-<li>1.在info.plist添加View controller-based status bar appearance字段并将值设置成NO</li>
-</ul>
-
-<p><img src="http://www.zxjsn.com/wp-content/uploads/2015/03/plist-300x22.jpg" alt="这里写图片描述"/></p>
-
-<ul>
-<li>2.然后在Appdelegate里面添加：</li>
-</ul>
-
-<pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-// Override point for customization after application launch.
-[application setStatusBarHidden:NO];
-[application setStatusBarStyle:UIStatusBarStyleLightContent];
-return YES;
-}
-</code></pre>
-
-<ul>
-<li>3.给navigationController设置新的背景色和字体颜色</li>
-</ul>
-
-<pre><code>self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
-self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
-</code></pre>
-
-<hr/>
-
-<p>只需要这简单的三步即可实现</p>
-
+<title>index</title>
+</head>
+<body>
+	hello world!
 </body>
-
 </html>
